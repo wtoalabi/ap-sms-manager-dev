@@ -1,0 +1,45 @@
+/* @license
+Papa Parse
+v5.2.0
+https://github.com/mholt/PapaParse
+License: MIT
+*/
+
+/*!
+  * vue-router v3.3.4
+  * (c) 2020 Evan You
+  * @license MIT
+  */
+
+/*!
+ * ApexCharts v3.19.3
+ * (c) 2018-2020 Juned Chhipa
+ * Released under the MIT License.
+ */
+
+/*!
+ * Determine if an object is a Buffer
+ *
+ * @author   Feross Aboukhadijeh <https://feross.org>
+ * @license  MIT
+ */
+
+/*!
+ * Vue.js v2.6.11
+ * (c) 2014-2019 Evan You
+ * Released under the MIT License.
+ */
+
+/*!
+ * vuex v3.5.1
+ * (c) 2020 Evan You
+ * @license MIT
+ */
+
+/*! svg.draggable.js - v2.2.2 - 2019-01-08
+* https://github.com/svgdotjs/svg.draggable.js
+* Copyright (c) 2019 Wout Fierens; Licensed MIT */
+
+/*! svg.filter.js - v2.0.2 - 2016-02-24
+* https://github.com/wout/svg.filter.js
+* Copyright (c) 2016 Wout Fierens; Licensed MIT */

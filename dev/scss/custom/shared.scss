@@ -1,0 +1,23 @@
+*{
+  //border: 1px green solid;
+}
+@import "~animate.css";
+#apps_bay_sms_manager_dashboard {
+  input[type=text]:focus, input[type=text],input[readonly],textarea:focus,textarea[readonly]{
+    border-color: transparent;
+    background-color: transparent;
+    box-shadow: none;
+    outline: none;
+  }
+  .fill-height{
+    padding: 1rem .5rem;
+  }
+  margin-left: -20px !important;
+  a {
+    text-decoration: none;
+  }
+  button{
+    outline: none;
+  }
+
+}
