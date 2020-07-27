@@ -30,6 +30,7 @@ export default {
   },
 
   async saveContacts(store, payload) {
+    let initialContactsCount = store.state.contacts.list.length
     await Requests("save-contacts", {
       action: "post",
       mergeQueries: false,
@@ -40,6 +41,9 @@ export default {
       showInnerLoading: true,
       mutator: "contact_mutators",
       onSuccessCallback:()=>{
+        if(initialContactsCount === 0){
+          store.dispatch("loadMeta")
+        }
         store.commit("toggleSavedContactsFlag", true)
       }
     })

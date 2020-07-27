@@ -8,11 +8,13 @@
       <v-card-title>{{title}}</v-card-title>
       <v-card-text>
         <apexchart
+            v-if="labels.length >0"
             :width="width"
             type="pie"
             :options="options"
             :series="series">
         </apexchart>
+        <div v-else>No Data To Show</div>
       </v-card-text>
     </v-card>
   </div>

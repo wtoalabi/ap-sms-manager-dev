@@ -4,7 +4,7 @@ export default {
   },
   setTitle({title}, payload) {
     title = payload;
-    document.title = `${title} - User Account | SCMS`
+    document.title = `${title} - AP SMS Manager`
   },
   startLoading(state, _) {
     state.loading = true;

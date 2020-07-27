@@ -11,12 +11,13 @@
 	class SettingsMigration01 {
 		public static function Up( ) {
 			$table_name = 'settings';
-			Capsule::schema()->create($table_name, function ($table) {
-				$table->increments('id');
-				$table->json('settings')->nullable();
-				$table->timestamps();
-			});
-			
+			if ( !Capsule::schema()->hasTable( $table_name ) ) {
+				Capsule::schema()->create( $table_name, function ( $table ) {
+					$table->increments( 'id' );
+					$table->json( 'settings' )->nullable();
+					$table->timestamps();
+				} );
+			}
 		}
 		
 		public static function Down(  ) {

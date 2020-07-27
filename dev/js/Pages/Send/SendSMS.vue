@@ -13,7 +13,8 @@
                     :persistent-hint="true" :multiple="false"
                     :clearable="true"
                     :key="reloadGatewayBox"
-                    :prop-selected-i-d="defaultGatewayID" @selected="gatewayIsSelected"
+                    :prop-selected-i-d="defaultGatewayID"
+                    @selected="gatewayIsSelected"
                     :items="gateways" text="name" value="id"
                     label="Select The Gateway API to use"/>
               </v-col>
@@ -22,7 +23,7 @@
                     hint="Note that groups without contacts wont be shown here."
                     :persistent-hint="true"
                     :clearable="true" :multiple="true" :chips="true" :key="reloadGroupsBox"
-                    @cle
+                    @clear="selectedGroup"
                     :prop-selected-i-d="selectedGroupID" @selected="selectedGroup"
                     :items="groups" text="name" value="id"
                     label="Select Recipient Group(s)"/>

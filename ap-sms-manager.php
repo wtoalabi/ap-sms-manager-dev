@@ -3,7 +3,7 @@
 	/**
 	 * Created by Alabi Olawale
 	 * Date: 25/07/2020
-	 * Plugin Name: AP SMS Manager -Dev
+	 * Plugin Name: AP SMS Manager
 	 * Plugin URI: https://sms.appsbay.xyz
 	 * Description: This plugin helps you send bulk sms easily.
 	 * Author: AppsBay

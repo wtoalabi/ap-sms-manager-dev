@@ -54,7 +54,7 @@
       </template>
       <template v-slot:item.contacts_count="{item}">
         <a @click.prevent="goToContacts(item)">
-          {{item.contacts_count}}
+          {{item.contacts}}
         </a>
       </template>
       <template v-slot:item.actions="{ item }">

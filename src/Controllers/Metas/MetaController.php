@@ -21,7 +21,7 @@
 	class MetaController {
 		
 		
-		public function index(  ) {
+		public static function index(  ) {
 			$stats = static::GenerateStats();
 			$setting = Setting::find(1);
 			$groups = GroupsCollection::Collect( Group::all());
@@ -45,9 +45,9 @@
 		}
 		private static function GenerateStats() {
 			return [
-				'groups'=>static::TopGroupsByContactsStats(),
-				'messages' => static::MessagesDeliveryByMonthStats(),
 				'contacts' => static::ContactsAdditionsByMonthStats(),
+				'messages' => static::MessagesDeliveryByMonthStats(),
+				'groups'=>static::TopGroupsByContactsStats(),
 				'gateways' => static::TopGatewayBySentMessagesStats(),
 			];
 		}
@@ -79,7 +79,7 @@
 				];
 			})->reduce(function ($carry, $item) {
 				return collect($carry)->merge( $item);
-			},[])->take(8);
+			},collect([]))->take(8);
 		}
 		protected static function TopGatewayBySentMessagesStats(  ) {
 			return Gateway::all()->sortBy(function($gateway){
@@ -92,7 +92,7 @@
 				];
 			})->reduce(function ($carry, $item) {
 				return collect($carry)->merge( $item);
-			},[])->take(8);
+			},collect([]))->take(8);
 		}
 		
 	}

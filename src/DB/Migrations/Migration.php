@@ -6,19 +6,19 @@
 	
 	class Migration  {
 		public static function Install(  ) {
-			/*GroupMigration01::Up();
+			GroupMigration01::Up();
 			ContactMigration01::Up();
-			*/
-			//SettingsMigration01::Up();
-			//GatewaysMigration01::Up();
-			//MessageMigration01::Up();
-			//SeedData::Run();
+			SettingsMigration01::Up();
+			GatewaysMigration01::Up();
+			MessageMigration01::Up();
+			SeedData::Run();
 		}
 		
 		public static function UnInstall(  ) {
 			ContactMigration01::Down();
+			MessageMigration01::Down();
 			GroupMigration01::Down();
-			SettingsMigration01::Down();
 			GatewaysMigration01::Down();
+			SettingsMigration01::Down();
 		}
 	}

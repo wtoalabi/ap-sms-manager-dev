@@ -11,15 +11,16 @@
 	class ContactMigration01 {
 		public static function Up( ) {
 			$table_name = 'contacts';
-			Capsule::schema()->create($table_name, function ($table) {
-				$table->bigIncrements('id');
-				$table->unsignedBigInteger('group_id');
-				$table->string('number');
-				$table->string('source');
-				$table->foreign('group_id')->references('id')->on('groups')->onDelete('CASCADE');
-				$table->timestamps();
-			});
-			
+			if ( !Capsule::schema()->hasTable( $table_name ) ) {
+				Capsule::schema()->create( $table_name, function ( $table ) {
+					$table->bigIncrements( 'id' );
+					$table->unsignedBigInteger( 'group_id' );
+					$table->string( 'number' );
+					$table->string( 'source' );
+					$table->foreign( 'group_id' )->references( 'id' )->on( 'groups' )->onDelete( 'CASCADE' );
+					$table->timestamps();
+				} );
+			}
 		}
 		
 		public static function Down(  ) {

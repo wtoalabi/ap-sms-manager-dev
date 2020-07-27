@@ -7,11 +7,13 @@
       <v-card-title>{{title}}</v-card-title>
       <v-card-text>
         <apexchart
+            v-if="xAxis.length >0"
             :width="width"
             type="area"
             :options="options"
             :series="series">
         </apexchart>
+        <div v-else>No Data To Show</div>
       </v-card-text>
     </v-card>
   </div>

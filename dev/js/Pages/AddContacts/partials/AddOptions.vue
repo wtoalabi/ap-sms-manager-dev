@@ -1,6 +1,5 @@
 <template>
   <div>
-    <h1>Premium</h1>
     <v-row>
       <v-col cols="12" md="4">
         <div class="display">

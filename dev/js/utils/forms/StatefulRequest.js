@@ -44,7 +44,7 @@ export default async function Requests(url, {
       location.assign(`${aps_globals.admin_url}`);
       return ;
     }
-    console.log(errorData)
+    console.dir(errorData)
     errors.record(errorData.response.data.errors || errorData.response.data.message);
     onErrorCallback(errorData.response.data.message || errorData.response.data.errors);
     if(showNotification){

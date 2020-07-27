@@ -1,5 +1,3 @@
-* https://appsbay.loc/?rest_route=/wp/v2/posts
-
 # Todo
 * Make theme choice persistent
 * Link to plugin update from theme page
