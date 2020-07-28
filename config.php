@@ -1,7 +1,5 @@
 <?php
-	namespace Config;
-	
-	use WP_Error;
+	namespace AppsBay_Main_Config;
 	
 	function config($key){
 		$config = [

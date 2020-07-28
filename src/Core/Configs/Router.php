@@ -8,7 +8,7 @@
 	
 	
 	use WP_REST_Server;
-	use function Config\config;
+	use function AppsBay_Main_Config\config;
 	
 		/*The Router class registers all the helper methods needed to generate a restful endpoints */
 	class Router {

@@ -8,7 +8,7 @@
 	
 	
 	use WPHelper\AdminMenuPage;
-	use function Config\config;
+	use function AppsBay_Main_Config\config;
 	
 	class Menu {
 		public static function Load() {

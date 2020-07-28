@@ -13,26 +13,27 @@
 	require __DIR__ . '/vendor/autoload.php';
 	
 	use App\Core\Configs\Instance;
+	use function AppsBay_Main_Config\doOrDie;
 	
-	\Config\doOrDie();
+	doOrDie();
 	/*This is the entry point*/
 	
-	Initialize();
-	register_activation_hook( __FILE__, 'apps_bay_sms_manager_activate' );
-	register_deactivation_hook( __FILE__, 'apps_bay_sms_manager_deactivate' );
+	appsbay_sms_manager_main_initialize();
+	register_activation_hook( __FILE__, 'appsbay_sms_manager_main_activate' );
+	register_deactivation_hook( __FILE__, 'appsbay_sms_manager_main_deactivate' );
 	
-	function Initialize() {
+	function appsbay_sms_manager_main_initialize() {
 		/*Let there be light. This is where we bootstrap the app.*/
 		Instance::InitiateDB();
 		add_action( 'init', [ "App\Core\Configs\Instance", "Initialize" ] );
 	}
 	
-	function apps_bay_sms_manager_activate() {
+	function appsbay_sms_manager_main_activate() {
 		/*During plugin activation*/
 		Instance::Activate();
 	}
 	
-	function apps_bay_sms_manager_deactivate() {
+	function appsbay_sms_manager_main_deactivate() {
 		/*During plugin deactivation*/
 		Instance::Deactivate();
 	}

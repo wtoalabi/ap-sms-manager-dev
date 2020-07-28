@@ -7,7 +7,7 @@
 	namespace App\Core\Hooks;
 	
 	
-	use function Config\config;
+	use function AppsBay_Main_Config\config;
 	
 	class Styles {
 		public static function Load() {

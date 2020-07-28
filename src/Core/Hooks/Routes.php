@@ -7,8 +7,7 @@
 	namespace App\Core\Hooks;
 	
 	use App\Core\Configs\Router;
-	use Globals;
-	use function Config\config;
+	use function AppsBay_Main_Config\config;
 	
 	class Routes {
 		public static function Load() {
