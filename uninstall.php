@@ -32,5 +32,5 @@ use AppsBay\DB\Migrations\Migration;
 if ( ! defined( 'WP_UNINSTALL_PLUGIN' ) ) {
 	exit;
 }
-Instance::initiated_b();
-Migration::UnInstall();
+Instance::initiate_db();
+Migration::un_install();
