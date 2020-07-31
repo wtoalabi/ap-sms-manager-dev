@@ -6,7 +6,7 @@
  * Plugin URI: https://sms.appsbay.xyz
  * Description: This plugin helps you send bulk sms easily.
  * Author: AppsBay
- * Version: 0.0.3
+ * Version: 0.0.4
  * Author URI: https://appsbay.xyz
  */
 require __DIR__ . '/vendor/autoload.php';

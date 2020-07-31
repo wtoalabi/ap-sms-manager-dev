@@ -2,9 +2,9 @@
 Contributors: appsbay
 Tags: sms, sms manager, sms-api, sms gateways
 Requires at least: 5.2
-Donate link: sms.appsbay.xyz
+Donate link: https://www.patreon.com/appsbay
 Tested up to: 5.4.2
-Stable tag: 0.0.3
+Stable tag: 0.0.4
 License: GPLv2 or later
 Requires PHP: 7.2
 
@@ -42,6 +42,11 @@ Major features in AP SMS Manager include:
 = 0.0.3 =
 *Release Date - 31 July 2020*
 * General Bug fixes and refactoring
+
+= 0.0.3 =
+*Release Date - 31 July 2020*
+* Minor Bugfix: Remove loading once message is sent.
+* Minor Bugfix: Update Recipients count when group is selected/deselected from SEND SMS page
 
 == Frequently Asked Questions ==
 

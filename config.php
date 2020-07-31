@@ -4,7 +4,7 @@ namespace AppsBay_Main_Config;
 
 function config( $key ) {
 	$config = array(
-		'plugin_version'   => '0.0.3',
+		'plugin_version'   => '0.0.4',
 		'rest_namespace'   => 'apps_bay/v1',
 		'controllers_path' => 'AppsBay\Controllers',
 		'rest_url'         => site_url() . '/?rest_route=/',
