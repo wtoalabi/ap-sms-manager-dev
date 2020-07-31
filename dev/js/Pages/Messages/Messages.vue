@@ -1,16 +1,16 @@
 <template>
-  <div>
-    <router-view></router-view>
-  </div>
+    <div>
+        <router-view></router-view>
+    </div>
 </template>
 
 <script>
-  export default {
-    data() {
-      return {}
-    },
-    methods: {},
-    computed: {}
-  }
+    export default {
+        data() {
+            return {}
+        },
+        methods: {},
+        computed: {}
+    }
 
 </script>

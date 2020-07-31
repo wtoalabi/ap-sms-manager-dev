@@ -1,24 +1,25 @@
 <?php
-	
-	namespace App\DB\Migrations;
+
+	namespace AppsBay\DB\Migrations;
+
 	use Illuminate\Database\Capsule\Manager as Capsule;
-	
-	
-	class Migration  {
-		public static function Install(  ) {
-			GroupMigration01::Up();
-			ContactMigration01::Up();
-			SettingsMigration01::Up();
-			GatewaysMigration01::Up();
-			MessageMigration01::Up();
-			SeedData::Run();
-		}
-		
-		public static function UnInstall(  ) {
-			ContactMigration01::Down();
-			MessageMigration01::Down();
-			GroupMigration01::Down();
-			GatewaysMigration01::Down();
-			SettingsMigration01::Down();
-		}
+
+
+class Migration {
+	public static function install() {
+		GroupMigration01::up();
+		ContactMigration01::up();
+		SettingsMigration01::up();
+		GatewaysMigration01::up();
+		MessageMigration01::up();
+		SeedData::run();
 	}
+
+	public static function un_install() {
+		ContactMigration01::down();
+		MessageMigration01::down();
+		GroupMigration01::down();
+		GatewaysMigration01::down();
+		SettingsMigration01::down();
+	}
+}

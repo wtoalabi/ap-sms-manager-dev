@@ -1,6 +1,6 @@
 export default {
-  loading: false,
-  miniDrawer:false,
-  title: '',
-  notifications: {},
+    loading: false,
+    miniDrawer: false,
+    title: '',
+    notifications: {},
 }

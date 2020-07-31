@@ -1,19 +1,19 @@
 <template>
-  <div>
-    <router-view></router-view>
-  </div>
+    <div>
+        <router-view></router-view>
+    </div>
 </template>
 
 <script>
-  export default {
-    mounted() {
+    export default {
+        mounted() {
 
-    },
-    data() {
-      return {}
-    },
-    methods: {},
-    computed: {}
-  }
+        },
+        data() {
+            return {}
+        },
+        methods: {},
+        computed: {}
+    }
 
 </script>

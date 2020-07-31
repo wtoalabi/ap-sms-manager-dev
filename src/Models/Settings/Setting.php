@@ -1,11 +1,12 @@
 <?php
-	
-	namespace App\Models\Settings;
-	use App\Models\Base\BaseModel;
-	
-	class Setting extends BaseModel {
-		protected $fillable = ['settings'];
-		protected $casts = [
-			'settings'=>'json'
-		];
-	}
+
+	namespace AppsBay\Models\Settings;
+
+	use AppsBay\Models\Base\BaseModel;
+
+class Setting extends BaseModel {
+	protected $fillable = array( 'settings' );
+	protected $casts    = array(
+		'settings' => 'json',
+	);
+}

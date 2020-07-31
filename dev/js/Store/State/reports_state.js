@@ -1,6 +1,6 @@
 export default {
-  reports:{
-    list:[],
-    rowsNumber: 10
-  }
+    reports: {
+        list: [],
+        rowsNumber: 10
+    }
 }

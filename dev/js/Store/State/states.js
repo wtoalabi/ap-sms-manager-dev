@@ -7,14 +7,15 @@ import gateways_state from "@/Store/State/gateways_state";
 import message_state from "@/Store/State/message_state";
 import reports_state from "@/Store/State/reports_state";
 import stats_state from "@/Store/State/stats_state";
+
 export default {
-  ...default_state,
-  ...queries_state,
-  ...contacts_state,
-  ...settings_state,
-  ...groups_state,
-  ...gateways_state,
-  ...message_state,
-  ...reports_state,
-  ...stats_state
+    ...default_state,
+    ...queries_state,
+    ...contacts_state,
+    ...settings_state,
+    ...groups_state,
+    ...gateways_state,
+    ...message_state,
+    ...reports_state,
+    ...stats_state
 }
