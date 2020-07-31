@@ -51,7 +51,7 @@
                         <!--<schedule :disabled="!gatewayCanSchedule" @date_time="setDateTime"/>-->
                         <v-progress-linear
                                 class="progress"
-                                v-if="loading"
+                                v-if="messageIsSending"
                                 indeterminate
                                 color="success"
                         ></v-progress-linear>
@@ -235,11 +235,10 @@
             ,
             loading() {
                 return this.$store.state.loading;
-            }
-            ,
-            messageSent() {
-                return this.$store.state.messages.sent;
-            }
+            },
+            messageIsSending() {
+                return this.$store.state.messages.isSending;
+            },
         }
     }
 

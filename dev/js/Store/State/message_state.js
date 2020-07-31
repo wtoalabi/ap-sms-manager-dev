@@ -1,6 +1,6 @@
 export default {
     messages: {
         list: [],
-        sent: false
+        isSending: false
     }
 }

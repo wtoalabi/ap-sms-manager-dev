@@ -1,5 +1,5 @@
 export default {
-  toggle_message_sent(state,payload=false){
-    state.messages.sent = payload
+  toggle_message_is_sending(state,payload=false){
+    state.messages.isSending = payload
   }
 }
