@@ -24,7 +24,7 @@
     "sass-loader": "^7.1.0",
     "sass-resources-loader": "^2.0.1",
     "vue": "^2.6.11",
-    "vuetify": "^2.3.4",
+    "vuetify": "^2.6.10",
     "vuetify-loader": "^1.5.0",
     "vuex": "^3.5.1",
     "webpack-livereload-plugin": "2.3.0"
